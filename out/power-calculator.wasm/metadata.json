@@ -7,7 +7,7 @@
   "source": {
     "type": "git",
     "repository": "https://github.com/fluentlabs-xyz/power-calculator.git",
-    "commit": "54dde8c894e9dbcd54da47f4b080aa6d3043faef",
+    "commit": "dfd97d9f26cc3aee2aec8bdc42b2d1eb5dab1b2c",
     "project_path": "."
   },
   "compilation_settings": {
@@ -26,16 +26,16 @@
       "locked": true
     }
   },
-  "built_at": 1749728909,
+  "built_at": 1749729002,
   "bytecode": {
     "wasm": {
-      "hash": "sha256:ab7ff4187566673276007a544a4bfc2aca85be2791050d2e229f14f5763090b0",
-      "size": 38228,
+      "hash": "sha256:2e4a529e99883ce67718509645ce19e9df97866f2c7ef7ef237520bdda84d7f6",
+      "size": 37979,
       "path": "lib.wasm"
     },
     "rwasm": {
-      "hash": "sha256:9b47ae1a66230ddfec262fc6a24952fd076ef1c7e5e79b62c5628b1370e074e6",
-      "size": 59496,
+      "hash": "sha256:128e56b48811d38d2078749123622ebb7d68e3dd62190692dca797e05cc6f20b",
+      "size": 59135,
       "path": "lib.rwasm"
     }
   },
