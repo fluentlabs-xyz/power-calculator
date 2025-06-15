@@ -3,3 +3,6 @@ out
 Cargo.lock
 tmp
 tmp2
+artifacts
+.idea
+fluent-builder
