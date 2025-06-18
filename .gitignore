@@ -6,3 +6,8 @@ tmp2
 artifacts
 .idea
 fluent-builder
+Cargo.lock
+out-docker
+.wake
+justfile
+readme.md

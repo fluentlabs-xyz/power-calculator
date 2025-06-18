@@ -7,14 +7,18 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-fluentbase-sdk = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+# fluentbase-sdk = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+fluentbase-sdk = { git = "https://github.com/fluentlabs-xyz/fluentbase", rev = "18b54b51", default-features=false}
 
 [dev-dependencies]
-fluentbase-sdk-testing = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+# fluentbase-sdk-testing = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+fluentbase-sdk-testing = { git = "https://github.com/fluentlabs-xyz/fluentbase", rev = "18b54b51", default-features=false }
 
 [build-dependencies]
-fluentbase-build = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
-fluentbase-types = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+fluentbase-build = { git = "https://github.com/fluentlabs-xyz/fluentbase", rev = "18b54b51" }
+# fluentbase-build = {path = "../fluentbase/crates/build"}
+# fluentbase-build = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
+# fluentbase-types = { git = "https://github.com/fluentlabs-xyz/fluentbase", tag = "v0.2.1-dev", default-features=false }
 sha256 = "1.0"
 chrono = "0.4"
 cargo_metadata = "0.20.0"
