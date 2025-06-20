@@ -22,10 +22,10 @@ pub trait PowerAPI {
 #[router(mode = "solidity")]
 impl<SDK: SharedAPI> PowerAPI for PowerCalculator<SDK> {
     fn power(&self, base: U256, exponent: U256) -> U256 {
-        // // Simple implementation - be careful with large exponents!
-        // if exponent == U256::from(0) {
-        //     return U256::from(1);
-        // }
+        // Simple implementation - be careful with large exponents!
+        if exponent == U256::from(0) {
+            return U256::from(1);
+        }
 
         let mut result = U256::from(1);
         let mut exp = exponent;

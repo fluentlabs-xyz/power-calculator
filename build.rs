@@ -1,10 +1,10 @@
 use fluentbase_build::{build_with_args, Artifact, BuildArgs};
-use std::{path::PathBuf};
+use std::path::PathBuf;
 
 fn main() {
     println!("cargo:warning=Build script started");
 
-    std::env::set_var("FLUENT_DOCKER_IMAGE", "fluentbase-build:v2.0.4-dev");
+    // std::env::set_var("FLUENT_DOCKER_IMAGE", "fluentbase:local");
 
     build_with_args(
         ".",
@@ -14,13 +14,13 @@ fn main() {
             mount_dir: Some(PathBuf::from("./")),
             output: Some(PathBuf::from("out")),
             generate: vec![
-                Artifact::Abi,
+                Artifact::Metadata,
                 Artifact::Rwasm,
                 Artifact::Wat,
                 Artifact::Solidity,
-                Artifact::Metadata,
+                Artifact::Abi,
             ],
-            wasm_opt: false,
+            wasm_opt: true,
             locked: true,
             ..Default::default()
         },

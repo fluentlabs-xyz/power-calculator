@@ -42,3 +42,5 @@ cmp arm.code x86.code
 wasm-tools strip -a arm.wasm -o arm.clean.wasm
 wasm-tools strip -a x86.wasm -o x86.clean.wasm
 ```
+
+  Finished `release` profile [optimized] target(s) in 2m 52s
