@@ -652,12 +652,6 @@ checksum = "4c7f02d4ea65f2c1853089ffd8d2787bdbc63de2f0d29dedbcf8ccdfa0ccd4cf"
 
 [[package]]
 name = "base64"
-version = "0.21.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
-
-[[package]]
-name = "base64"
 version = "0.22.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
@@ -1176,33 +1170,32 @@ dependencies = [
 
 [[package]]
 name = "cranelift-assembler-x64"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e4b56ebe316895d3fa37775d0a87b0c889cc933f5c8b253dbcc7c7bcb7fe7e4"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-assembler-x64-meta",
 ]
 
 [[package]]
 name = "cranelift-assembler-x64-meta"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95cabbc01dfbd7dcd6c329ca44f0212910309c221797ac736a67a5bc8857fe1b"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
+dependencies = [
+ "cranelift-srcgen",
+]
 
 [[package]]
 name = "cranelift-bforest"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76ffe46df300a45f1dc6f609dc808ce963f0e3a2e971682c479a2d13e3b9b8ef"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-entity",
 ]
 
 [[package]]
 name = "cranelift-bitset"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b265bed7c51e1921fdae6419791d31af77d33662ee56d7b0fa0704dc8d231cab"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "serde",
  "serde_derive",
@@ -1210,9 +1203,8 @@ dependencies = [
 
 [[package]]
 name = "cranelift-codegen"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e606230a7e3a6897d603761baee0d19f88d077f17b996bb5089488a29ae96e41"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "bumpalo",
  "cranelift-assembler-x64",
@@ -1232,39 +1224,37 @@ dependencies = [
  "serde",
  "smallvec",
  "target-lexicon",
+ "wasmtime-math",
 ]
 
 [[package]]
 name = "cranelift-codegen-meta"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8a63bffafc23bc60969ad528e138788495999d935f0adcfd6543cb151ca8637d"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
- "cranelift-assembler-x64",
+ "cranelift-assembler-x64-meta",
  "cranelift-codegen-shared",
+ "cranelift-srcgen",
  "pulley-interpreter",
 ]
 
 [[package]]
 name = "cranelift-codegen-shared"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af50281b67324b58e843170a6a5943cf6d387c06f7eeacc9f5696e4ab7ae7d7e"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 
 [[package]]
 name = "cranelift-control"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c20c1b38d1abfbcebb0032e497e71156c0e3b8dcb3f0a92b9863b7bcaec290c"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "arbitrary",
 ]
 
 [[package]]
 name = "cranelift-entity"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0c2c67d95507c51b4a1ff3f3555fe4bfec36b9e13c1b684ccc602736f5d5f4a2"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-bitset",
  "serde",
@@ -1273,9 +1263,8 @@ dependencies = [
 
 [[package]]
 name = "cranelift-frontend"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e002691cc69c38b54fc7ec93e5be5b744f627d027031d991cc845d1d512d0ce"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-codegen",
  "log",
@@ -1285,20 +1274,23 @@ dependencies = [
 
 [[package]]
 name = "cranelift-isle"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e93588ed1796cbcb0e2ad160403509e2c5d330d80dd6e0014ac6774c7ebac496"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 
 [[package]]
 name = "cranelift-native"
-version = "0.118.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e5b09bdd6407bf5d89661b80cf926ce731c9e8cc184bf49102267a2369a8358e"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-codegen",
  "libc",
  "target-lexicon",
 ]
+
+[[package]]
+name = "cranelift-srcgen"
+version = "0.121.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 
 [[package]]
 name = "crc"
@@ -1656,6 +1648,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "directories"
+version = "6.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "16f5094c54661b38d03bd7e50df373292118db60b585c08a411c6d840017fe7d"
+dependencies = [
+ "dirs-sys",
+]
+
+[[package]]
 name = "directories-next"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1666,13 +1667,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "dirs-sys"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e01a3366d27ee9890022452ee61b2b63a67e6f13f58900b651ff5665f0bb1fab"
+dependencies = [
+ "libc",
+ "option-ext",
+ "redox_users 0.5.0",
+ "windows-sys",
+]
+
+[[package]]
 name = "dirs-sys-next"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ebda144c4fe02d1f7ea1a7d9641b6fc6b580adcfa024ae48797ecdeb6825b4d"
 dependencies = [
  "libc",
- "redox_users",
+ "redox_users 0.4.6",
  "winapi",
 ]
 
@@ -1929,8 +1942,8 @@ checksum = "b7ac824320a75a52197e8f2d787f6a38b6718bb6897a35142d749af3c0e8f4fe"
 
 [[package]]
 name = "fluentbase-build"
-version = "0.2.1-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "anyhow",
  "cargo_metadata 0.19.2",
@@ -1948,13 +1961,12 @@ dependencies = [
  "syn 2.0.103",
  "toml",
  "tracing",
- "wasmtime",
 ]
 
 [[package]]
 name = "fluentbase-codec"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-primitives",
  "byteorder",
@@ -1966,8 +1978,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-codec-derive"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
@@ -1980,7 +1992,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-blake2f"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -1990,7 +2002,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-bls12381"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2000,7 +2012,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-bn256"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2010,7 +2022,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-ecrecover"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2018,18 +2030,28 @@ dependencies = [
 ]
 
 [[package]]
-name = "fluentbase-contracts-erc20"
+name = "fluentbase-contracts-eip2935"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
 ]
 
 [[package]]
+name = "fluentbase-contracts-erc20"
+version = "0.1.0"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
+dependencies = [
+ "fluentbase-build",
+ "fluentbase-erc20",
+ "fluentbase-sdk",
+]
+
+[[package]]
 name = "fluentbase-contracts-evm"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-evm",
@@ -2039,7 +2061,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-fairblock"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2048,7 +2070,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-identity"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2058,7 +2080,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-kzg"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2068,7 +2090,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-modexp"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2078,7 +2100,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-multicall"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2087,7 +2109,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-nitro"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "ciborium",
  "coset",
@@ -2103,7 +2125,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-oauth2"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2112,7 +2134,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-ripemd160"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2122,7 +2144,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-secp256r1"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2132,7 +2154,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-sha256"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2142,7 +2164,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-svm"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2150,11 +2172,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "fluentbase-contracts-wasm"
+version = "0.1.0"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
+dependencies = [
+ "fluentbase-build",
+ "fluentbase-sdk",
+ "rwasm",
+]
+
+[[package]]
 name = "fluentbase-contracts-webauthn"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
- "base64 0.22.1",
+ "base64",
  "fluentbase-build",
  "fluentbase-sdk",
  "hex",
@@ -2163,9 +2195,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "fluentbase-erc20"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
+dependencies = [
+ "bincode 2.0.1",
+ "fluentbase-sdk",
+]
+
+[[package]]
 name = "fluentbase-evm"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "bincode 2.0.1",
  "bitvec",
@@ -2174,14 +2215,15 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-genesis"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-genesis",
  "fluentbase-contracts-blake2f",
  "fluentbase-contracts-bls12381",
  "fluentbase-contracts-bn256",
  "fluentbase-contracts-ecrecover",
+ "fluentbase-contracts-eip2935",
  "fluentbase-contracts-erc20",
  "fluentbase-contracts-evm",
  "fluentbase-contracts-fairblock",
@@ -2195,6 +2237,7 @@ dependencies = [
  "fluentbase-contracts-secp256r1",
  "fluentbase-contracts-sha256",
  "fluentbase-contracts-svm",
+ "fluentbase-contracts-wasm",
  "fluentbase-contracts-webauthn",
  "fluentbase-types",
  "lazy_static",
@@ -2204,8 +2247,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-runtime"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-types",
@@ -2221,8 +2264,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-sdk"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-sdk-derive",
@@ -2232,8 +2275,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-sdk-derive"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-sol-macro-input",
  "crypto-hashes",
@@ -2247,7 +2290,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk-derive-core"
 version = "0.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-sol-macro-input",
  "anyhow",
@@ -2269,8 +2312,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-sdk-testing"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-genesis",
@@ -2285,8 +2328,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-svm"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "bincode 2.0.1",
  "bitflags",
@@ -2295,7 +2338,6 @@ dependencies = [
  "bytemuck_derive",
  "byteorder",
  "fluentbase-sdk",
- "fluentbase-types",
  "hashbrown 0.15.4",
  "itertools 0.14.0",
  "keccak-hash",
@@ -2341,8 +2383,8 @@ dependencies = [
 
 [[package]]
 name = "fluentbase-types"
-version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+version = "0.3.2-dev"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-primitives",
  "alloy-rlp",
@@ -2351,6 +2393,7 @@ dependencies = [
  "byteorder",
  "fluentbase-codec",
  "hashbrown 0.15.4",
+ "paste",
  "revm-precompile",
  "revm-primitives",
  "rwasm",
@@ -2970,7 +3013,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e79019718125edc905a079a70cfa5f3820bc76139fc91d6f9abc27ea2a887139"
 dependencies = [
  "arrayref",
- "base64 0.22.1",
+ "base64",
  "digest 0.9.0",
  "libsecp256k1-core",
  "libsecp256k1-gen-ecmult",
@@ -3305,6 +3348,12 @@ name = "opaque-debug"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08d65885ee38876c4f86fa503fb49d7b507c2b62552df7c70b2fce627e06381"
+
+[[package]]
+name = "option-ext"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04744f49eae99ab78e0d5c0b603ab218f515ea8cfe5a456d7629ad883a3b6e7d"
 
 [[package]]
 name = "ordered-float"
@@ -3799,13 +3848,23 @@ dependencies = [
 
 [[package]]
 name = "pulley-interpreter"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0c3325791708ad50580aeacfcce06cb5e462c9ba7a2368e109cb2012b944b70e"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cranelift-bitset",
  "log",
+ "pulley-macros",
  "wasmtime-math",
+]
+
+[[package]]
+name = "pulley-macros"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.103",
 ]
 
 [[package]]
@@ -3946,10 +4005,21 @@ dependencies = [
 ]
 
 [[package]]
-name = "regalloc2"
-version = "0.11.2"
+name = "redox_users"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dc06e6b318142614e4a48bc725abbf08ff166694835c43c9dae5a9009704639a"
+checksum = "dd6f9d3d47bdd2ad6945c5015a226ec6155d0bcdfd8f7cd29f86b71f8de99d2b"
+dependencies = [
+ "getrandom 0.2.16",
+ "libredox",
+ "thiserror 2.0.12",
+]
+
+[[package]]
+name = "regalloc2"
+version = "0.12.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5216b1837de2149f8bc8e6d5f88a9326b63b8c836ed58ce4a0a29ec736a59734"
 dependencies = [
  "allocator-api2",
  "bumpalo",
@@ -3968,7 +4038,7 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 [[package]]
 name = "revm"
 version = "24.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "revm-bytecode",
  "revm-context",
@@ -3986,7 +4056,7 @@ dependencies = [
 [[package]]
 name = "revm-bytecode"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "bitvec",
  "once_cell",
@@ -3996,7 +4066,7 @@ dependencies = [
 [[package]]
 name = "revm-context"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "cfg-if",
  "derive-where",
@@ -4011,7 +4081,7 @@ dependencies = [
 [[package]]
 name = "revm-context-interface"
 version = "5.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-eip2930",
  "alloy-eip7702",
@@ -4025,7 +4095,7 @@ dependencies = [
 [[package]]
 name = "revm-database"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "revm-bytecode",
  "revm-database-interface",
@@ -4036,7 +4106,7 @@ dependencies = [
 [[package]]
 name = "revm-database-interface"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "auto_impl",
  "revm-primitives",
@@ -4046,7 +4116,7 @@ dependencies = [
 [[package]]
 name = "revm-handler"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "auto_impl",
  "fluentbase-sdk",
@@ -4063,7 +4133,7 @@ dependencies = [
 [[package]]
 name = "revm-inspector"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "auto_impl",
  "revm-context",
@@ -4077,7 +4147,7 @@ dependencies = [
 [[package]]
 name = "revm-interpreter"
 version = "20.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-sdk",
  "revm-bytecode",
@@ -4088,7 +4158,7 @@ dependencies = [
 [[package]]
 name = "revm-precompile"
 version = "21.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "ark-bls12-381",
  "ark-bn254",
@@ -4113,7 +4183,7 @@ dependencies = [
 [[package]]
 name = "revm-primitives"
 version = "19.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "alloy-primitives",
  "num_enum",
@@ -4123,7 +4193,7 @@ dependencies = [
 [[package]]
 name = "revm-state"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "bitflags",
  "revm-bytecode",
@@ -4281,11 +4351,13 @@ dependencies = [
 [[package]]
 name = "rwasm"
 version = "0.0.0"
-source = "git+https://github.com/fluentlabs-xyz/rwasm?branch=devel#711124792be2eb5224a38e729a487947a89134eb"
+source = "git+https://github.com/fluentlabs-xyz/rwasm?branch=devel#21b74544cbb8e45894a93d7097d2453e6db9366e"
 dependencies = [
+ "anyhow",
  "bincode 2.0.1",
  "bitvec",
  "bytes",
+ "directories",
  "downcast-rs",
  "hashbrown 0.15.4",
  "libm",
@@ -4294,17 +4366,19 @@ dependencies = [
  "smallvec",
  "tiny-keccak",
  "wasmparser-nostd",
+ "wasmtime",
 ]
 
 [[package]]
 name = "rwasm-revm"
 version = "4.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?rev=1c0a988d#1c0a988d0e5a0ce3015084d53ffa85d5450c3eac"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.2-dev#9c87024d1a308645a811b60c4a2a10bdb1016d78"
 dependencies = [
  "fluentbase-genesis",
  "fluentbase-runtime",
  "fluentbase-sdk",
  "revm",
+ "rwasm",
 ]
 
 [[package]]
@@ -5092,12 +5166,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sptr"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3b9b39299b249ad65f3b7e96443bad61c02ca5cd3589f46cb6d610a0fd6c0d6a"
-
-[[package]]
 name = "stable_deref_trait"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5671,12 +5739,12 @@ dependencies = [
 
 [[package]]
 name = "wasm-encoder"
-version = "0.226.0"
+version = "0.233.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7d81b727619aec227dce83e7f7420d4e56c79acd044642a356ea045b98d4e13"
+checksum = "9679ae3cf7cfa2ca3a327f7fab97f27f3294d402fd1a76ca8ab514e17973e4d3"
 dependencies = [
  "leb128fmt",
- "wasmparser 0.226.0",
+ "wasmparser 0.233.0",
 ]
 
 [[package]]
@@ -5691,9 +5759,9 @@ dependencies = [
 
 [[package]]
 name = "wasmparser"
-version = "0.226.0"
+version = "0.233.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc28600dcb2ba68d7e5f1c3ba4195c2bddc918c0243fd702d0b6dbd05689b681"
+checksum = "b51cb03afce7964bbfce46602d6cb358726f36430b6ba084ac6020d8ce5bc102"
 dependencies = [
  "bitflags",
  "hashbrown 0.15.4",
@@ -5724,20 +5792,19 @@ dependencies = [
 
 [[package]]
 name = "wasmprinter"
-version = "0.226.0"
+version = "0.233.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "753a0516fa6c01756ee861f36878dfd9875f273aea9409d9ea390a333c5bcdc2"
+checksum = "abf8e5b732895c99b21aa615f1b73352e51bbe2b2cb6c87eae7f990d07c1ac18"
 dependencies = [
  "anyhow",
  "termcolor",
- "wasmparser 0.226.0",
+ "wasmparser 0.233.0",
 ]
 
 [[package]]
 name = "wasmtime"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b9fe78033c72da8741e724d763daf1375c93a38bfcea99c873ee4415f6098c3f"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "addr2line",
  "anyhow",
@@ -5758,22 +5825,20 @@ dependencies = [
  "memfd",
  "object",
  "once_cell",
- "paste",
  "postcard",
  "psm",
  "pulley-interpreter",
  "rayon",
- "rustix 0.38.44",
+ "rustix 1.0.7",
  "semver 1.0.26",
  "serde",
  "serde_derive",
  "serde_json",
  "smallvec",
- "sptr",
  "target-lexicon",
  "trait-variant",
- "wasm-encoder 0.226.0",
- "wasmparser 0.226.0",
+ "wasm-encoder 0.233.0",
+ "wasmparser 0.233.0",
  "wasmtime-asm-macros",
  "wasmtime-cache",
  "wasmtime-component-macro",
@@ -5793,25 +5858,23 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-asm-macros"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "47f3d44ae977d70ccf80938b371d5ec60b6adedf60800b9e8dd1223bb69f4cbc"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cfg-if",
 ]
 
 [[package]]
 name = "wasmtime-cache"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e209505770c7f38725513dba37246265fa6f724c30969de1e9d2a9e6c8f55099"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
- "base64 0.21.7",
+ "base64",
  "directories-next",
  "log",
  "postcard",
- "rustix 0.38.44",
+ "rustix 1.0.7",
  "serde",
  "serde_derive",
  "sha2 0.10.9",
@@ -5822,9 +5885,8 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-component-macro"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "397e68ee29eb072d8d8741c9d2c971a284cd1bc960ebf2c1f6a33ea6ba16d6e1"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "proc-macro2",
@@ -5837,15 +5899,13 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-component-util"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f292ef5eb2cf3d414c2bde59c7fa0feeba799c8db9a8c5a656ad1d1a1d05e10b"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 
 [[package]]
 name = "wasmtime-cranelift"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52fc12eb8ea695a30007a4849a5fd56209dd86a15579e92e0c27c27122818505"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "cfg-if",
@@ -5855,23 +5915,23 @@ dependencies = [
  "cranelift-frontend",
  "cranelift-native",
  "gimli",
- "itertools 0.12.1",
+ "itertools 0.14.0",
  "log",
  "object",
  "pulley-interpreter",
  "smallvec",
  "target-lexicon",
- "thiserror 1.0.69",
- "wasmparser 0.226.0",
+ "thiserror 2.0.12",
+ "wasmparser 0.233.0",
  "wasmtime-environ",
+ "wasmtime-math",
  "wasmtime-versioned-export-macros",
 ]
 
 [[package]]
 name = "wasmtime-environ"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b6b4bf08e371edf262cccb62de10e214bd4aaafaa069f1cd49c9c1c3a5ae8e4"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "cpp_demangle",
@@ -5888,22 +5948,22 @@ dependencies = [
  "serde_derive",
  "smallvec",
  "target-lexicon",
- "wasm-encoder 0.226.0",
- "wasmparser 0.226.0",
+ "wasm-encoder 0.233.0",
+ "wasmparser 0.233.0",
  "wasmprinter",
  "wasmtime-component-util",
 ]
 
 [[package]]
 name = "wasmtime-fiber"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f4c8828d7d8fbe90d087a9edea9223315caf7eb434848896667e5d27889f1173"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "cc",
  "cfg-if",
- "rustix 0.38.44",
+ "libc",
+ "rustix 1.0.7",
  "wasmtime-asm-macros",
  "wasmtime-versioned-export-macros",
  "windows-sys",
@@ -5911,21 +5971,19 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-jit-debug"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab9eff86dedd48b023199de2d266f5d3e37bc7c5bafdc1e3e3057214649ecf5a"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "cc",
  "object",
- "rustix 0.38.44",
+ "rustix 1.0.7",
  "wasmtime-versioned-export-macros",
 ]
 
 [[package]]
 name = "wasmtime-jit-icache-coherence"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a54f6c6c7e9d7eeee32dfcc10db7f29d505ee7dd28d00593ea241d5f70698e64"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "cfg-if",
@@ -5935,24 +5993,21 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-math"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1108aad2e6965698f9207ea79b80eda2b3dcc57dcb69f4258296d4664ae32cd"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "libm",
 ]
 
 [[package]]
 name = "wasmtime-slab"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "84d6a321317281b721c5530ef733e8596ecc6065035f286ccd155b3fa8e0ab2f"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 
 [[package]]
 name = "wasmtime-versioned-export-macros"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5732a5c86efce7bca121a61d8c07875f6b85c1607aa86753b40f7f8bd9d3a780"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5961,16 +6016,15 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-winch"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3aa4741ee66a52e2f0ec5f79040017123ba47d2dff9d994b35879cc2b7f468d4"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "cranelift-codegen",
  "gimli",
  "object",
  "target-lexicon",
- "wasmparser 0.226.0",
+ "wasmparser 0.233.0",
  "wasmtime-cranelift",
  "wasmtime-environ",
  "winch-codegen",
@@ -5978,9 +6032,8 @@ dependencies = [
 
 [[package]]
 name = "wasmtime-wit-bindgen"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "505c13fa0cac6c43e805347acf1e916c8de54e3790f2c22873c5692964b09b62"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
  "heck",
@@ -6052,20 +6105,21 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "winch-codegen"
-version = "31.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e02f05457f74ec3c94d5c5caac06b84fd8d9d4d7fa21419189845ed245a53477"
+version = "34.0.1"
+source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2b7d59c84999123338da7634ab0cf1f"
 dependencies = [
  "anyhow",
+ "cranelift-assembler-x64",
  "cranelift-codegen",
  "gimli",
  "regalloc2",
  "smallvec",
  "target-lexicon",
- "thiserror 1.0.69",
- "wasmparser 0.226.0",
+ "thiserror 2.0.12",
+ "wasmparser 0.233.0",
  "wasmtime-cranelift",
  "wasmtime-environ",
+ "wasmtime-math",
 ]
 
 [[package]]
@@ -6239,9 +6293,9 @@ dependencies = [
 
 [[package]]
 name = "wit-parser"
-version = "0.226.0"
+version = "0.233.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "33f007722bfd43a2978c5b8b90f02c927dddf0f11c5f5b50929816b3358718cd"
+checksum = "f22f1cd55247a2e616870b619766e9522df36b7abafbb29bbeb34b7a9da7e9f0"
 dependencies = [
  "anyhow",
  "id-arena",
@@ -6252,7 +6306,7 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "unicode-xid",
- "wasmparser 0.226.0",
+ "wasmparser 0.233.0",
 ]
 
 [[package]]
