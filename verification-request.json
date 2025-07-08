@@ -1,0 +1,40 @@
+{
+  "contract_name": "PowerCalculator",
+  "address_hash": "0x4c331eebe0a5b3f65abab4d40e54df8d14dc58ce",
+  "git_source": {
+    "repository_url": "https://github.com/fluentlabs-xyz/power-calculator.git",
+    "commit_reference": "cfea272",
+    "root": "."
+  },
+  "compile_settings": {
+    "sdk_version": "v0.3.4-dev",
+    "features": [],
+    "no_default_features": true
+  },
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "base",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "exponent",
+          "type": "uint256"
+        }
+      ],
+      "name": "power",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_0",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}

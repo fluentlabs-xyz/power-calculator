@@ -23,12 +23,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "adler2"
-version = "2.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
-
-[[package]]
 name = "ahash"
 version = "0.8.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -85,9 +79,9 @@ dependencies = [
 
 [[package]]
 name = "alloy-eips"
-version = "1.0.12"
+version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f853de9ca1819f54de80de5d03bfc1bb7c9fafcf092b480a654447141bc354d"
+checksum = "fe854e4051afb5b47931b78ba7b5af1952d06e903637430e98c8321192d29eca"
 dependencies = [
  "alloy-eip2124",
  "alloy-eip2930",
@@ -104,9 +98,9 @@ dependencies = [
 
 [[package]]
 name = "alloy-genesis"
-version = "1.0.12"
+version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8500bcc1037901953771c25cb77e0d4ec0bffd938d93a04715390230d21a612d"
+checksum = "38cc4c7363f48a2b61de395d9b2df52280e303a5af45a22ed33cf27cd30d7975"
 dependencies = [
  "alloy-eips",
  "alloy-primitives",
@@ -117,9 +111,9 @@ dependencies = [
 
 [[package]]
 name = "alloy-primitives"
-version = "1.2.0"
+version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a326d47106039f38b811057215a92139f46eef7983a4b77b10930a0ea5685b1e"
+checksum = "6177ed26655d4e84e00b65cb494d4e0b8830e7cae7ef5d63087d445a2600fb55"
 dependencies = [
  "alloy-rlp",
  "bytes",
@@ -161,14 +155,14 @@ checksum = "64b728d511962dda67c1bc7ea7c03736ec275ed2cf4c35d9585298ac9ccf3b73"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "alloy-serde"
-version = "1.0.12"
+version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "906ce0190afeded19cb2e963cb8507c975a7862216b9e74f39bf91ddee6ae74b"
+checksum = "1ad318c341481a5f5e50d69d830853873d8b5e8d2b73ea2c0da69cf78537c970"
 dependencies = [
  "alloy-primitives",
  "serde",
@@ -177,9 +171,9 @@ dependencies = [
 
 [[package]]
 name = "alloy-sol-macro-input"
-version = "1.2.0"
+version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9afe1bd348a41f8c9b4b54dfb314886786d6201235b0b3f47198b9d910c86bb2"
+checksum = "eda029f955b78e493360ee1d7bd11e1ab9f2a220a5715449babc79d6d0a01105"
 dependencies = [
  "const-hex",
  "dunce",
@@ -187,15 +181,15 @@ dependencies = [
  "macro-string",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
  "syn-solidity",
 ]
 
 [[package]]
 name = "alloy-trie"
-version = "0.8.1"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "983d99aa81f586cef9dae38443245e585840fcf0fc58b09aee0b1f27aed1d500"
+checksum = "bada1fc392a33665de0dc50d401a3701b62583c655e3522a323490a5da016962"
 dependencies = [
  "alloy-primitives",
  "alloy-rlp",
@@ -257,7 +251,7 @@ version = "1.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6c8bdeb6047d8983be085bab0ba1472e6dc604e7041dbf6fcd5e71523014fae9"
 dependencies = [
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -268,7 +262,7 @@ checksum = "403f75924867bb1033c59fbf0797484329750cfbe3c4325cd33127941fabc882"
 dependencies = [
  "anstyle",
  "once_cell_polyfill",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -413,7 +407,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62945a2f7e6de02a31fe400aa489f0e0f5b2502e69f95f853adb82a96c7a6b60"
 dependencies = [
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -451,7 +445,7 @@ dependencies = [
  "num-traits",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -540,7 +534,7 @@ checksum = "213888f660fddcca0d257e88e54ac05bca01885f258ccdf695bafd77031bb69d"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -599,7 +593,7 @@ checksum = "e539d3fca749fcee5236ab05e93a52867dd549cc157c8cb7f99595f3cedffdb5"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -620,7 +614,7 @@ checksum = "ffdcb70bdbc4d478427380519163274ac86e52916e10f0a8889adf0f96d3fee7"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -628,21 +622,6 @@ name = "autocfg"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
-
-[[package]]
-name = "backtrace"
-version = "0.3.75"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6806a6321ec58106fea15becdad98371e28d92ccbc7c8f1b3b6dd724fe8f1002"
-dependencies = [
- "addr2line",
- "cfg-if",
- "libc",
- "miniz_oxide",
- "object",
- "rustc-demangle",
- "windows-targets",
-]
 
 [[package]]
 name = "base16ct"
@@ -807,9 +786,9 @@ dependencies = [
 
 [[package]]
 name = "bumpalo"
-version = "3.18.1"
+version = "3.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "793db76d6187cd04dff33004d8e6c9cc4e05cd330500379d2394209271b4aeee"
+checksum = "46c5e41b57b8bba42a04676d81cb89e9ee8e859a1a66f80a5a72e1cb76b34d43"
 dependencies = [
  "allocator-api2",
 ]
@@ -844,7 +823,7 @@ checksum = "3fa76293b4f7bb636ab88fd78228235b5248b4d05cc589aed610f954af5d7c7a"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -896,53 +875,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "cargo-platform"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "84982c6c0ae343635a3a4ee6dedef965513735c8b183caa7289fa6e27399ebd4"
-dependencies = [
- "serde",
-]
-
-[[package]]
-name = "cargo-util-schemas"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e63d2780ac94487eb9f1fea7b0d56300abc9eb488800854ca217f102f5caccca"
-dependencies = [
- "semver 1.0.26",
- "serde",
- "serde-untagged",
- "serde-value",
- "thiserror 1.0.69",
- "toml",
- "unicode-xid",
- "url",
-]
-
-[[package]]
 name = "cargo_metadata"
 version = "0.19.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dd5eb614ed4c27c5d706420e4320fbe3216ab31fa1c33cd8246ac36dae4479ba"
 dependencies = [
  "camino",
- "cargo-platform 0.1.9",
- "semver 1.0.26",
- "serde",
- "serde_json",
- "thiserror 2.0.12",
-]
-
-[[package]]
-name = "cargo_metadata"
-version = "0.20.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f7835cfc6135093070e95eb2b53e5d9b5c403dc3a6be6040ee026270aa82502"
-dependencies = [
- "camino",
- "cargo-platform 0.2.0",
- "cargo-util-schemas",
+ "cargo-platform",
  "semver 1.0.26",
  "serde",
  "serde_json",
@@ -951,9 +890,9 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.2.27"
+version = "1.2.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d487aa071b5f64da6f19a3e848e3578944b726ee5a4854b82172f02aa876bfdc"
+checksum = "5c1599538de2394445747c8cf7935946e3cc27e9625f889d979bfb2aaf569362"
 dependencies = [
  "jobserver",
  "libc",
@@ -974,9 +913,7 @@ checksum = "c469d952047f47f91b68d1cba3f10d63c11d73e4636f24f08daf0278abf01c4d"
 dependencies = [
  "android-tzdata",
  "iana-time-zone",
- "js-sys",
  "num-traits",
- "wasm-bindgen",
  "windows-link",
 ]
 
@@ -1038,7 +975,7 @@ dependencies = [
  "heck",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1049,9 +986,12 @@ checksum = "b94f61472cee1439c0b966b47e3aca9ae07e45d070759512cd390ea2bebc6675"
 
 [[package]]
 name = "cobs"
-version = "0.2.3"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "67ba02a97a2bd10f4b59b25c7973101c79642302776489e030cd13cdab09ed15"
+checksum = "0fa961b519f0b462e3a3b4a34b64d119eeaca1d59af726fe450bbba07a9fc0a1"
+dependencies = [
+ "thiserror 2.0.12",
+]
 
 [[package]]
 name = "colorchoice"
@@ -1343,9 +1283,9 @@ checksum = "d0a5c400df2834b80a4c3327b3aad3a4c4cd4de0629063962b03235697506a28"
 
 [[package]]
 name = "crunchy"
-version = "0.2.3"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43da5946c66ffcc7745f48db692ffbb10a83bfe0afd96235c5c2a4fb23994929"
+checksum = "460fbee9c2c2f33933d720630a6a0bac33ba7053db5344fac858d4b8952d77d5"
 
 [[package]]
 name = "crypto-bigint"
@@ -1414,7 +1354,7 @@ checksum = "f46882e17999c6cc590af592290432be3bce0428cb0d5f8b6715e4dc7b383eb3"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1438,7 +1378,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "strsim",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1449,7 +1389,7 @@ checksum = "fc34b93ccb385b40dc71c6fceac4b2ad23662c7eeb248cf10d529b7e055b6ead"
 dependencies = [
  "darling_core",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1560,7 +1500,7 @@ checksum = "8034092389675178f570469e6c3b0465d3d30b4505c294a6550db47f3c17ad18"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1582,7 +1522,7 @@ checksum = "510c292c8cf384b1a340b816a9a6cf2599eb8f566a44949024af88418000c50b"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1611,7 +1551,7 @@ checksum = "cb7330aeadfbe296029522e6c40f315320aba36fc43a5b3632f3795348f3bd22"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1622,7 +1562,7 @@ checksum = "bda628edc44c4bb645fbe0f758797143e4e07926f7ebf4e9bdfbd3d2ce621df3"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
  "unicode-xid",
 ]
 
@@ -1675,7 +1615,7 @@ dependencies = [
  "libc",
  "option-ext",
  "redox_users 0.5.0",
- "windows-sys",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -1687,17 +1627,6 @@ dependencies = [
  "libc",
  "redox_users 0.4.6",
  "winapi",
-]
-
-[[package]]
-name = "displaydoc"
-version = "0.2.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97369cbbc041bc366949bc74d34658d6cda5621039731c6310521892a3a20ae0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
 ]
 
 [[package]]
@@ -1735,7 +1664,7 @@ dependencies = [
  "enum-ordinalize",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1805,7 +1734,7 @@ checksum = "0d28318a75d4aead5c4db25382e8ef717932d0346600cacae6357eb5941bc5ff"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -1815,23 +1744,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
 
 [[package]]
-name = "erased-serde"
-version = "0.4.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e004d887f51fcb9fef17317a2f3525c887d8aa3f4f50fed920816a688284a5b7"
-dependencies = [
- "serde",
- "typeid",
-]
-
-[[package]]
 name = "errno"
-version = "0.3.12"
+version = "0.3.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cea14ef9355e3beab063703aa9dab15afd25f0667c341310c1e5274bb1d0da18"
+checksum = "778e2ac28f6c47af28e4907f13ffd1e1ddbd400980a9abd7c8df189bf578a5ad"
 dependencies = [
  "libc",
- "windows-sys",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -1943,10 +1862,10 @@ checksum = "b7ac824320a75a52197e8f2d787f6a38b6718bb6897a35142d749af3c0e8f4fe"
 [[package]]
 name = "fluentbase-build"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "anyhow",
- "cargo_metadata 0.19.2",
+ "cargo_metadata",
  "chrono",
  "clap",
  "convert_case 0.8.0",
@@ -1958,7 +1877,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2 0.10.9",
- "syn 2.0.103",
+ "syn 2.0.104",
  "toml",
  "tracing",
 ]
@@ -1966,7 +1885,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-primitives",
  "byteorder",
@@ -1979,20 +1898,20 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec-derive"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
  "proc-macro2",
  "quote",
  "serde",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "fluentbase-contracts-blake2f"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2002,7 +1921,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-bls12381"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2012,7 +1931,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-bn256"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2022,7 +1941,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-ecrecover"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2032,7 +1951,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-eip2935"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2041,7 +1960,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-erc20"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-erc20",
@@ -2051,7 +1970,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-evm"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-evm",
@@ -2061,7 +1980,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-fairblock"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2070,7 +1989,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-identity"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2080,7 +1999,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-kzg"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2090,7 +2009,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-modexp"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2100,7 +2019,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-multicall"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2109,7 +2028,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-nitro"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "ciborium",
  "coset",
@@ -2125,7 +2044,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-oauth2"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2134,7 +2053,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-ripemd160"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2144,7 +2063,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-secp256r1"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2154,7 +2073,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-sha256"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2164,7 +2083,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-svm"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2174,7 +2093,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-wasm"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-build",
  "fluentbase-sdk",
@@ -2184,7 +2103,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-contracts-webauthn"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "base64",
  "fluentbase-build",
@@ -2197,7 +2116,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-erc20"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "bincode 2.0.1",
  "fluentbase-sdk",
@@ -2206,7 +2125,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-evm"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "bincode 2.0.1",
  "bitvec",
@@ -2216,7 +2135,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-genesis"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-genesis",
  "fluentbase-contracts-blake2f",
@@ -2248,7 +2167,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-runtime"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-types",
@@ -2265,7 +2184,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-sdk-derive",
@@ -2276,7 +2195,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk-derive"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-sol-macro-input",
  "crypto-hashes",
@@ -2284,13 +2203,13 @@ dependencies = [
  "proc-macro-error",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "fluentbase-sdk-derive-core"
 version = "0.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-sol-macro-input",
  "anyhow",
@@ -2304,7 +2223,7 @@ dependencies = [
  "quote",
  "serde",
  "serde_json",
- "syn 2.0.103",
+ "syn 2.0.104",
  "syn-solidity",
  "thiserror 2.0.12",
  "tracing",
@@ -2313,7 +2232,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk-testing"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-genesis",
@@ -2329,7 +2248,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-svm"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "bincode 2.0.1",
  "bitflags",
@@ -2384,7 +2303,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-types"
 version = "0.3.3-dev"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-primitives",
  "alloy-rlp",
@@ -2411,15 +2330,6 @@ name = "foldhash"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d9c4f5dac5e15c24eb999c26181a6ca40b39fe946cbe4c263c7209467bc83af2"
-
-[[package]]
-name = "form_urlencoded"
-version = "1.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
-dependencies = [
- "percent-encoding",
-]
 
 [[package]]
 name = "funty"
@@ -2669,92 +2579,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "icu_collections"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "200072f5d0e3614556f94a9930d5dc3e0662a652823904c3a75dc3b0af7fee47"
-dependencies = [
- "displaydoc",
- "potential_utf",
- "yoke",
- "zerofrom",
- "zerovec",
-]
-
-[[package]]
-name = "icu_locale_core"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0cde2700ccaed3872079a65fb1a78f6c0a36c91570f28755dda67bc8f7d9f00a"
-dependencies = [
- "displaydoc",
- "litemap",
- "tinystr",
- "writeable",
- "zerovec",
-]
-
-[[package]]
-name = "icu_normalizer"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "436880e8e18df4d7bbc06d58432329d6458cc84531f7ac5f024e93deadb37979"
-dependencies = [
- "displaydoc",
- "icu_collections",
- "icu_normalizer_data",
- "icu_properties",
- "icu_provider",
- "smallvec",
- "zerovec",
-]
-
-[[package]]
-name = "icu_normalizer_data"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "00210d6893afc98edb752b664b8890f0ef174c8adbb8d0be9710fa66fbbf72d3"
-
-[[package]]
-name = "icu_properties"
-version = "2.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "016c619c1eeb94efb86809b015c58f479963de65bdb6253345c1a1276f22e32b"
-dependencies = [
- "displaydoc",
- "icu_collections",
- "icu_locale_core",
- "icu_properties_data",
- "icu_provider",
- "potential_utf",
- "zerotrie",
- "zerovec",
-]
-
-[[package]]
-name = "icu_properties_data"
-version = "2.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "298459143998310acd25ffe6810ed544932242d3f07083eee1084d83a71bd632"
-
-[[package]]
-name = "icu_provider"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "03c80da27b5f4187909049ee2d72f276f0d9f99a42c306bd0131ecfe04d8e5af"
-dependencies = [
- "displaydoc",
- "icu_locale_core",
- "stable_deref_trait",
- "tinystr",
- "writeable",
- "yoke",
- "zerofrom",
- "zerotrie",
- "zerovec",
-]
-
-[[package]]
 name = "id-arena"
 version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2765,27 +2589,6 @@ name = "ident_case"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
-
-[[package]]
-name = "idna"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "686f825264d630750a544639377bae737628043f20d38bbc029e8f29ea968a7e"
-dependencies = [
- "idna_adapter",
- "smallvec",
- "utf8_iter",
-]
-
-[[package]]
-name = "idna_adapter"
-version = "1.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3acae9609540aa318d1bc588455225fb2085b9ed0c4f6bd0d9d5bcd86f1a0344"
-dependencies = [
- "icu_normalizer",
- "icu_properties",
-]
 
 [[package]]
 name = "impl-codec"
@@ -2804,14 +2607,14 @@ checksum = "a0eb5a3343abf848c0984fe4604b2b105da9539376e24fc0a3b0007411ae4fd9"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "indexmap"
-version = "2.9.0"
+version = "2.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cea70ddb795996207ad57735b50c5982d8844f38ba9ee5f1aedcfb708a2aa11e"
+checksum = "fe4cd85333e22411419a0bcae1297d25e58c9443848b11dc6a86fefe8c78a661"
 dependencies = [
  "equivalent",
  "hashbrown 0.15.4",
@@ -2998,9 +2801,9 @@ checksum = "f9fbbcab51052fe104eb5e5d351cf728d30a5be1fe14d9be8a3b097481fb97de"
 
 [[package]]
 name = "libredox"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c0ff37bd590ca25063e35af745c343cb7a0271906fb7b37e4813e8f79f00268d"
+checksum = "1580801010e535496706ba011c15f8532df6b42297d2e471fec38ceadd8c0638"
 dependencies = [
  "bitflags",
  "libc",
@@ -3065,12 +2868,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cd945864f07fe9f5371a27ad7b52a172b4b499999f1d97574c9fa68373937e12"
 
 [[package]]
-name = "litemap"
-version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "241eaef5fd12c88705a01fc1066c48c4b36e0dd4377dcdc7ec3942cea7a69956"
-
-[[package]]
 name = "lock_api"
 version = "0.4.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3088,9 +2885,9 @@ checksum = "13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94"
 
 [[package]]
 name = "mach2"
-version = "0.4.2"
+version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "19b955cdeb2a02b9117f121ce63aa52d08ade45de53e48fe6a38b39c10f6f709"
+checksum = "d640282b302c0bb0a2a8e0233ead9035e3bed871f0b7e81fe4a1ec829765db44"
 dependencies = [
  "libc",
 ]
@@ -3103,7 +2900,7 @@ checksum = "1b27834086c65ec3f9387b096d66e99f221cf081c2b738042aa252bcd41204e3"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -3147,15 +2944,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b2cffa4ad52c6f791f4f8b15f0c05f9824b2ced1160e88cc393d64fff9a8ac64"
 dependencies = [
  "rustix 0.38.44",
-]
-
-[[package]]
-name = "miniz_oxide"
-version = "0.8.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
-dependencies = [
- "adler2",
 ]
 
 [[package]]
@@ -3219,7 +3007,7 @@ checksum = "ed3955f1a9c7c0c15e092f9c887db08b1fc683305fdf6eb6684f22555355e202"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -3290,32 +3078,34 @@ dependencies = [
 
 [[package]]
 name = "num_enum"
-version = "0.7.3"
+version = "0.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e613fc340b2220f734a8595782c551f1250e969d87d3be1ae0579e8d4065179"
+checksum = "a973b4e44ce6cad84ce69d797acf9a044532e4184c4f267913d1b546a0727b7a"
 dependencies = [
  "num_enum_derive",
+ "rustversion",
 ]
 
 [[package]]
 name = "num_enum_derive"
-version = "0.7.3"
+version = "0.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af1844ef2428cc3e1cb900be36181049ef3d3193c63e43026cfe202983b27a56"
+checksum = "77e878c846a8abae00dd069496dbe8751b16ac1c3d6bd2a7283a938e8228f90d"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "nybbles"
-version = "0.3.4"
+version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8983bb634df7248924ee0c4c3a749609b5abcb082c28fffe3254b3eb3602b307"
+checksum = "675b3a54e5b12af997abc8b6638b0aee51a28caedab70d4967e0d5db3a3f1d06"
 dependencies = [
- "const-hex",
+ "cfg-if",
+ "ruint",
  "smallvec",
 ]
 
@@ -3354,15 +3144,6 @@ name = "option-ext"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04744f49eae99ab78e0d5c0b603ab218f515ea8cfe5a456d7629ad883a3b6e7d"
-
-[[package]]
-name = "ordered-float"
-version = "2.10.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68f19d67e5a2795c94e73e0bb1cc1a7edeb2e28efd39e2e1c9b7a40c1108b11c"
-dependencies = [
- "num-traits",
-]
 
 [[package]]
 name = "p256"
@@ -3641,7 +3422,7 @@ dependencies = [
  "proc-macro-crate",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -3658,12 +3439,6 @@ checksum = "88b39c9bfcfc231068454382784bb460aae594343fb030d46e9f50a645418412"
 dependencies = [
  "base64ct",
 ]
-
-[[package]]
-name = "percent-encoding"
-version = "2.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e"
 
 [[package]]
 name = "pest"
@@ -3706,9 +3481,9 @@ checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
 
 [[package]]
 name = "postcard"
-version = "1.1.1"
+version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "170a2601f67cc9dba8edd8c4870b15f71a6a2dc196daec8c83f72b59dff628a8"
+checksum = "6c1de96e20f51df24ca73cafcc4690e044854d803259db27a00a461cb3b9d17a"
 dependencies = [
  "cobs",
  "embedded-io 0.4.0",
@@ -3717,24 +3492,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "potential_utf"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e5a7c30837279ca13e7c867e9e40053bc68740f988cb07f7ca6df43cc734b585"
-dependencies = [
- "zerovec",
-]
-
-[[package]]
 name = "power-calculator"
 version = "0.1.0"
 dependencies = [
- "cargo_metadata 0.20.0",
- "chrono",
  "fluentbase-build",
  "fluentbase-sdk",
  "fluentbase-sdk-testing",
- "sha256",
 ]
 
 [[package]]
@@ -3864,7 +3627,7 @@ source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -4038,7 +3801,7 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 [[package]]
 name = "revm"
 version = "24.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "revm-bytecode",
  "revm-context",
@@ -4056,7 +3819,7 @@ dependencies = [
 [[package]]
 name = "revm-bytecode"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "bitvec",
  "once_cell",
@@ -4066,7 +3829,7 @@ dependencies = [
 [[package]]
 name = "revm-context"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "cfg-if",
  "derive-where",
@@ -4081,7 +3844,7 @@ dependencies = [
 [[package]]
 name = "revm-context-interface"
 version = "5.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-eip2930",
  "alloy-eip7702",
@@ -4095,7 +3858,7 @@ dependencies = [
 [[package]]
 name = "revm-database"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "revm-bytecode",
  "revm-database-interface",
@@ -4106,7 +3869,7 @@ dependencies = [
 [[package]]
 name = "revm-database-interface"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "auto_impl",
  "revm-primitives",
@@ -4116,7 +3879,7 @@ dependencies = [
 [[package]]
 name = "revm-handler"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "auto_impl",
  "fluentbase-sdk",
@@ -4133,7 +3896,7 @@ dependencies = [
 [[package]]
 name = "revm-inspector"
 version = "5.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "auto_impl",
  "revm-context",
@@ -4147,7 +3910,7 @@ dependencies = [
 [[package]]
 name = "revm-interpreter"
 version = "20.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-sdk",
  "revm-bytecode",
@@ -4158,7 +3921,7 @@ dependencies = [
 [[package]]
 name = "revm-precompile"
 version = "21.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "ark-bls12-381",
  "ark-bn254",
@@ -4183,7 +3946,7 @@ dependencies = [
 [[package]]
 name = "revm-primitives"
 version = "19.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "alloy-primitives",
  "num_enum",
@@ -4193,7 +3956,7 @@ dependencies = [
 [[package]]
 name = "revm-state"
 version = "4.0.1"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "bitflags",
  "revm-bytecode",
@@ -4314,7 +4077,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys 0.4.15",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4327,7 +4090,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys 0.9.4",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4372,7 +4135,7 @@ dependencies = [
 [[package]]
 name = "rwasm-revm"
 version = "4.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.3-dev#4064ee905c6682dc0eb8d1424f13796fea9b7562"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase?tag=v0.3.4-dev#2aa2af1b42305d1915ea07d44f371c2216c79897"
 dependencies = [
  "fluentbase-genesis",
  "fluentbase-runtime",
@@ -4408,7 +4171,7 @@ dependencies = [
  "proc-macro-crate",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -4434,7 +4197,7 @@ checksum = "1db149f81d46d2deba7cd3c50772474707729550221e69588478ebf9ada425ae"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -4518,27 +4281,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "serde-untagged"
-version = "0.1.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "299d9c19d7d466db4ab10addd5703e4c615dec2a5a16dbbafe191045e87ee66e"
-dependencies = [
- "erased-serde",
- "serde",
- "typeid",
-]
-
-[[package]]
-name = "serde-value"
-version = "0.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c"
-dependencies = [
- "ordered-float",
- "serde",
-]
-
-[[package]]
 name = "serde_arrays"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4564,7 +4306,7 @@ checksum = "5b0276cf7f2c73365f7157c8123c21cd9a50fbbd844757af28ca1f5925fc2a00"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -4621,19 +4363,6 @@ dependencies = [
  "cfg-if",
  "cpufeatures",
  "digest 0.10.7",
-]
-
-[[package]]
-name = "sha256"
-version = "1.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f880fc8562bdeb709793f00eb42a2ad0e672c4f883bbe59122b926eca935c8f6"
-dependencies = [
- "async-trait",
- "bytes",
- "hex",
- "sha2 0.10.9",
- "tokio",
 ]
 
 [[package]]
@@ -4694,7 +4423,7 @@ dependencies = [
 [[package]]
 name = "solana-account-info"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4707,12 +4436,12 @@ dependencies = [
 [[package]]
 name = "solana-atomic-u64"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 
 [[package]]
 name = "solana-bincode"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "lazy_static",
@@ -4722,7 +4451,7 @@ dependencies = [
 [[package]]
 name = "solana-clock"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4734,7 +4463,7 @@ dependencies = [
 [[package]]
 name = "solana-decode-error"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "num-traits",
 ]
@@ -4742,12 +4471,12 @@ dependencies = [
 [[package]]
 name = "solana-define-syscall"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 
 [[package]]
 name = "solana-epoch-schedule"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4759,7 +4488,7 @@ dependencies = [
 [[package]]
 name = "solana-feature-set"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "hashbrown 0.15.4",
  "lazy_static",
@@ -4773,7 +4502,7 @@ dependencies = [
 [[package]]
 name = "solana-fee-calculator"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "log",
@@ -4784,7 +4513,7 @@ dependencies = [
 [[package]]
 name = "solana-hash"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "bs58",
@@ -4799,7 +4528,7 @@ dependencies = [
 [[package]]
 name = "solana-instruction"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "num-traits",
@@ -4813,7 +4542,7 @@ dependencies = [
 [[package]]
 name = "solana-last-restart-slot"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4825,7 +4554,7 @@ dependencies = [
 [[package]]
 name = "solana-msg"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "solana-define-syscall",
 ]
@@ -4833,12 +4562,12 @@ dependencies = [
 [[package]]
 name = "solana-native-token"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 
 [[package]]
 name = "solana-precompile-error"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "num-traits",
  "solana-decode-error",
@@ -4847,7 +4576,7 @@ dependencies = [
 [[package]]
 name = "solana-program-entrypoint"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "solana-account-info",
  "solana-msg",
@@ -4858,7 +4587,7 @@ dependencies = [
 [[package]]
 name = "solana-program-error"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "num-traits",
  "serde",
@@ -4872,7 +4601,7 @@ dependencies = [
 [[package]]
 name = "solana-program-memory"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "num-traits",
  "solana-define-syscall",
@@ -4881,7 +4610,7 @@ dependencies = [
 [[package]]
 name = "solana-pubkey"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "bs58",
@@ -4906,7 +4635,7 @@ dependencies = [
 [[package]]
 name = "solana-rent"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4918,23 +4647,23 @@ dependencies = [
 [[package]]
 name = "solana-sanitize"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 
 [[package]]
 name = "solana-sdk-macro"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bs58",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
 name = "solana-serialize-utils"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "solana-instruction",
  "solana-pubkey",
@@ -4944,7 +4673,7 @@ dependencies = [
 [[package]]
 name = "solana-sha256-hasher"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "sha2 0.10.9",
  "solana-define-syscall",
@@ -4954,7 +4683,7 @@ dependencies = [
 [[package]]
 name = "solana-short-vec"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "serde",
 ]
@@ -4962,7 +4691,7 @@ dependencies = [
 [[package]]
 name = "solana-slot-hashes"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "serde",
@@ -4974,7 +4703,7 @@ dependencies = [
 [[package]]
 name = "solana-slot-history"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "bincode 2.0.1",
  "bv",
@@ -4986,7 +4715,7 @@ dependencies = [
 [[package]]
 name = "solana-stable-layout"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "solana-instruction",
  "solana-pubkey",
@@ -4995,7 +4724,7 @@ dependencies = [
 [[package]]
 name = "solana-sysvar-id"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "solana-pubkey",
 ]
@@ -5003,7 +4732,7 @@ dependencies = [
 [[package]]
 name = "solana-transaction-error"
 version = "2.1.18"
-source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#d3e1552485b1e7e1269e48968a1cf80290ba0223"
+source = "git+https://github.com/fluentlabs-xyz/agave?branch=feat%2Fsvm#5fb3e19ee5688ea43ad4f505a409149dc830aa3a"
 dependencies = [
  "serde",
  "serde_derive",
@@ -5208,7 +4937,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "rustversion",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5221,7 +4950,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "rustversion",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5243,9 +4972,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "2.0.103"
+version = "2.0.104"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e4307e30089d6fd6aff212f2da3a1f9e32f3223b1f010fb09b7c95f90f3ca1e8"
+checksum = "17b6f705963418cdb9927482fa304bc562ece2fdd4f616084c50b7023b435a40"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5254,25 +4983,14 @@ dependencies = [
 
 [[package]]
 name = "syn-solidity"
-version = "1.2.0"
+version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14c8c8f496c33dc6343dac05b4be8d9e0bca180a4caa81d7b8416b10cc2273cd"
+checksum = "b9ac494e7266fcdd2ad80bf4375d55d27a117ea5c866c26d0e97fe5b3caeeb75"
 dependencies = [
  "paste",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
-]
-
-[[package]]
-name = "synstructure"
-version = "0.13.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "728a70f3dbaf5bab7f0c4b1ac8d7ae5ea60a4b5549c8a5914361c99147a709d2"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5312,7 +5030,7 @@ dependencies = [
  "getrandom 0.3.3",
  "once_cell",
  "rustix 1.0.7",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -5350,7 +5068,7 @@ checksum = "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5361,7 +5079,7 @@ checksum = "7f7cf42b4507d8ea322120659672cf1b9dbb93f8f2d4ecfd6e51350ff5b17a1d"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5383,16 +5101,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "tinystr"
-version = "0.8.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d4f6d1145dcb577acf783d4e601bc1d76a13337bb54e6233add580b07344c8b"
-dependencies = [
- "displaydoc",
- "zerovec",
-]
-
-[[package]]
 name = "tinyvec"
 version = "1.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5406,17 +5114,6 @@ name = "tinyvec_macros"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
-
-[[package]]
-name = "tokio"
-version = "1.45.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779"
-dependencies = [
- "backtrace",
- "bytes",
- "pin-project-lite",
-]
 
 [[package]]
 name = "toml"
@@ -5478,7 +5175,7 @@ checksum = "81383ab64e72a7a8b8e13130c49e3dab29def6d0c7d76a03087b3cf71c5c6903"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -5508,14 +5205,8 @@ checksum = "70977707304198400eb4835a78f6a9f928bf41bba420deb8fdb175cd965d77a7"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
-
-[[package]]
-name = "typeid"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc7d623258602320d5c55d1bc22793b57daff0ec7efc270ea7d55ce1d5f5471c"
 
 [[package]]
 name = "typenum"
@@ -5597,23 +5288,6 @@ name = "unty"
 version = "0.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6d49784317cd0d1ee7ec5c716dd598ec5b4483ea832a2dced265471cc0f690ae"
-
-[[package]]
-name = "url"
-version = "2.5.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "32f8b686cadd1473f4bd0117a5d28d36b1ade384ea9b5069a1c40aefed7fda60"
-dependencies = [
- "form_urlencoded",
- "idna",
- "percent-encoding",
-]
-
-[[package]]
-name = "utf8_iter"
-version = "1.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
 
 [[package]]
 name = "utf8parse"
@@ -5701,7 +5375,7 @@ dependencies = [
  "log",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
  "wasm-bindgen-shared",
 ]
 
@@ -5723,7 +5397,7 @@ checksum = "8ae87ea40c9f689fc23f209965b6fb8a99ad69aeeb0231408be24920604395de"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
  "wasm-bindgen-backend",
  "wasm-bindgen-shared",
 ]
@@ -5853,7 +5527,7 @@ dependencies = [
  "wasmtime-versioned-export-macros",
  "wasmtime-winch",
  "wat",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -5879,7 +5553,7 @@ dependencies = [
  "serde_derive",
  "sha2 0.10.9",
  "toml",
- "windows-sys",
+ "windows-sys 0.59.0",
  "zstd",
 ]
 
@@ -5891,7 +5565,7 @@ dependencies = [
  "anyhow",
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
  "wasmtime-component-util",
  "wasmtime-wit-bindgen",
  "wit-parser",
@@ -5966,7 +5640,7 @@ dependencies = [
  "rustix 1.0.7",
  "wasmtime-asm-macros",
  "wasmtime-versioned-export-macros",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -5988,7 +5662,7 @@ dependencies = [
  "anyhow",
  "cfg-if",
  "libc",
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -6011,7 +5685,7 @@ source = "git+https://github.com/fluentlabs-xyz/wasmtime?branch=devel#f0c5b017d2
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -6094,7 +5768,7 @@ version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
 dependencies = [
- "windows-sys",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -6129,7 +5803,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e48a53791691ab099e5e2ad123536d0fff50652600abaf43bbf952894110d0be"
 dependencies = [
  "windows-core 0.52.0",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -6138,7 +5812,7 @@ version = "0.52.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33ab640c8d7e35bf8ba19b884ba838ceb4fba93a4e8c65a9059d08afcfc683d9"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -6162,7 +5836,7 @@ checksum = "a47fddd13af08290e67f4acabf4b459f647552718f683a7b415d290ac744a836"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -6173,7 +5847,7 @@ checksum = "bd9211b69f8dcdfa817bfd14bf1c97c9188afa36f4750130fcdf3f400eca9fa8"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -6206,7 +5880,16 @@ version = "0.59.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
+]
+
+[[package]]
+name = "windows-sys"
+version = "0.60.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f2f500e4d28234f72040990ec9d39e3a6b950f9f22d3dba18416c35882612bcb"
+dependencies = [
+ "windows-targets 0.53.2",
 ]
 
 [[package]]
@@ -6215,14 +5898,30 @@ version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973"
 dependencies = [
- "windows_aarch64_gnullvm",
- "windows_aarch64_msvc",
- "windows_i686_gnu",
- "windows_i686_gnullvm",
- "windows_i686_msvc",
- "windows_x86_64_gnu",
- "windows_x86_64_gnullvm",
- "windows_x86_64_msvc",
+ "windows_aarch64_gnullvm 0.52.6",
+ "windows_aarch64_msvc 0.52.6",
+ "windows_i686_gnu 0.52.6",
+ "windows_i686_gnullvm 0.52.6",
+ "windows_i686_msvc 0.52.6",
+ "windows_x86_64_gnu 0.52.6",
+ "windows_x86_64_gnullvm 0.52.6",
+ "windows_x86_64_msvc 0.52.6",
+]
+
+[[package]]
+name = "windows-targets"
+version = "0.53.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c66f69fcc9ce11da9966ddb31a40968cad001c5bedeb5c2b82ede4253ab48aef"
+dependencies = [
+ "windows_aarch64_gnullvm 0.53.0",
+ "windows_aarch64_msvc 0.53.0",
+ "windows_i686_gnu 0.53.0",
+ "windows_i686_gnullvm 0.53.0",
+ "windows_i686_msvc 0.53.0",
+ "windows_x86_64_gnu 0.53.0",
+ "windows_x86_64_gnullvm 0.53.0",
+ "windows_x86_64_msvc 0.53.0",
 ]
 
 [[package]]
@@ -6232,10 +5931,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3"
 
 [[package]]
+name = "windows_aarch64_gnullvm"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "86b8d5f90ddd19cb4a147a5fa63ca848db3df085e25fee3cc10b39b6eebae764"
+
+[[package]]
 name = "windows_aarch64_msvc"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469"
+
+[[package]]
+name = "windows_aarch64_msvc"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c7651a1f62a11b8cbd5e0d42526e55f2c99886c77e007179efff86c2b137e66c"
 
 [[package]]
 name = "windows_i686_gnu"
@@ -6244,10 +5955,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b"
 
 [[package]]
+name = "windows_i686_gnu"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1dc67659d35f387f5f6c479dc4e28f1d4bb90ddd1a5d3da2e5d97b42d6272c3"
+
+[[package]]
 name = "windows_i686_gnullvm"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66"
+
+[[package]]
+name = "windows_i686_gnullvm"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ce6ccbdedbf6d6354471319e781c0dfef054c81fbc7cf83f338a4296c0cae11"
 
 [[package]]
 name = "windows_i686_msvc"
@@ -6256,10 +5979,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66"
 
 [[package]]
+name = "windows_i686_msvc"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "581fee95406bb13382d2f65cd4a908ca7b1e4c2f1917f143ba16efe98a589b5d"
+
+[[package]]
 name = "windows_x86_64_gnu"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78"
+
+[[package]]
+name = "windows_x86_64_gnu"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2e55b5ac9ea33f2fc1716d1742db15574fd6fc8dadc51caab1c16a3d3b4190ba"
 
 [[package]]
 name = "windows_x86_64_gnullvm"
@@ -6268,10 +6003,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d"
 
 [[package]]
+name = "windows_x86_64_gnullvm"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0a6e035dd0599267ce1ee132e51c27dd29437f63325753051e71dd9e42406c57"
+
+[[package]]
 name = "windows_x86_64_msvc"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
+
+[[package]]
+name = "windows_x86_64_msvc"
+version = "0.53.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "271414315aff87387382ec3d271b52d7ae78726f5d44ac98b4f4030c91880486"
 
 [[package]]
 name = "winnow"
@@ -6310,12 +6057,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "writeable"
-version = "0.6.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea2f10b9bb0928dfb1b42b65e1f9e36f7f54dbdf08457afefb38afcdec4fa2bb"
-
-[[package]]
 name = "wyz"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6336,30 +6077,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "yoke"
-version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5f41bb01b8226ef4bfd589436a297c53d118f65921786300e427be8d487695cc"
-dependencies = [
- "serde",
- "stable_deref_trait",
- "yoke-derive",
- "zerofrom",
-]
-
-[[package]]
-name = "yoke-derive"
-version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "38da3c9736e16c5d3c8c597a9aaa5d1fa565d0532ae05e27c24aa62fb32c0ab6"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
- "synstructure",
-]
-
-[[package]]
 name = "zerocopy"
 version = "0.8.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6376,28 +6093,7 @@ checksum = "9ecf5b4cc5364572d7f4c329661bcc82724222973f2cab6f050a4e5c22f75181"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
-]
-
-[[package]]
-name = "zerofrom"
-version = "0.1.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "50cc42e0333e05660c3587f3bf9d0478688e15d870fab3346451ce7f8c9fbea5"
-dependencies = [
- "zerofrom-derive",
-]
-
-[[package]]
-name = "zerofrom-derive"
-version = "0.1.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d71e5d6e06ab090c67b5e44993ec16b72dcbaabc526db883a360057678b48502"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
- "synstructure",
+ "syn 2.0.104",
 ]
 
 [[package]]
@@ -6417,40 +6113,7 @@ checksum = "ce36e65b0d2999d2aafac989fb249189a141aee1f53c612c1f37d72631959f69"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.103",
-]
-
-[[package]]
-name = "zerotrie"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36f0bbd478583f79edad978b407914f61b2972f5af6fa089686016be8f9af595"
-dependencies = [
- "displaydoc",
- "yoke",
- "zerofrom",
-]
-
-[[package]]
-name = "zerovec"
-version = "0.11.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a05eb080e015ba39cc9e23bbe5e7fb04d5fb040350f99f34e338d5fdd294428"
-dependencies = [
- "yoke",
- "zerofrom",
- "zerovec-derive",
-]
-
-[[package]]
-name = "zerovec-derive"
-version = "0.11.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b96237efa0c878c64bd89c436f661be4e46b2f3eff1ebb976f7ef2321d2f58f"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
+ "syn 2.0.104",
 ]
 
 [[package]]

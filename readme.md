@@ -1,46 +1,38 @@
-# 🐳 Building inside Docker (x86\_64)
+# Power Calculator
 
-To compare artifacts between macOS (ARM) and Linux (x86), you can build inside Docker:
+This Rust smart contract demonstrates Rust contract verification using Block Scout and creating reproducible builds with Docker.
 
-## 1. **Build Docker image**
+## Building the Contract
 
-```bash
-docker build --platform=linux/amd64 -t rust-wasm-x86 -f Dockerfile .
+To build the contract, run:
+
+```sh
+cargo build --release
 ```
 
-## 2. **Run build inside container**
+If the required image is not present in the Client Base Build, it will be automatically downloaded, and artifacts will be placed in the `out` directory.
 
-```bash
-docker run --rm -it \
-  --platform=linux/amd64 \
-  -v "$PWD":/workspace \
-  -w /workspace \
-  rust-wasm-x86
+## Deploying the Contract
+
+Deploy the contract using `gblend`. Example:
+
+```sh
+gblend deploy \
+  --private-key YOUR_PRIVATE_KEY \
+  out/PowerCalculator.wasm/lib.wasm \
+  --rpc https://rpc.dev.gblend.xyz \
+  --chain-id 20993
 ```
 
-> This will produce output artifacts in `artifacts/x86/`.
+## Contract Verification
 
-## 3. **Build locally on macOS (ARM)**
+To submit the contract for verification, run:
 
-```bash
-CARGO_TARGET_DIR=target-arm \
-cargo build --release --target wasm32-unknown-unknown \
---no-default-features --locked
+```sh
+curl -X POST https://blockscout.dev.gblend.xyz/api/v2/smart-contracts/CONTRACT_ADDRESS/verification/via/fluent \
+  -H "Content-Type: application/json" \
+  -d @verification-request.json \
+  -v
 ```
 
-> Output will be stored in `artifacts/arm/`.
-
-## 4. **Compare artifacts**
-
-```bash
-just compare
-
-wasm-objdump -j code -s arm.wasm > arm.code
-wasm-objdump -j code -s x86.wasm > x86.code
-cmp arm.code x86.code
-
-wasm-tools strip -a arm.wasm -o arm.clean.wasm
-wasm-tools strip -a x86.wasm -o x86.clean.wasm
-```
-
-  Finished `release` profile [optimized] target(s) in 2m 52s
+> **Note:** Remember to update the `CONTRACT_ADDRESS` and the `git commit` hash in `verification-request.json`.

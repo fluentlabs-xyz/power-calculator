@@ -8,4 +8,4 @@ fluent-builder
 out-docker
 .wake
 justfile
-readme.md
+tmp/
