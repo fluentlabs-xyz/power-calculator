@@ -11,6 +11,7 @@ fn main() {
         BuildArgs {
             contract_name: Some("PowerCalculator.wasm".to_string()),
             docker: true,
+            tag: "v0.3.4-dev".to_string(),
             mount_dir: Some(PathBuf::from("./")),
             output: Some(PathBuf::from("out")),
             generate: vec![

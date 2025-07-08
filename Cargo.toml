@@ -22,9 +22,9 @@ default = ["std"]
 std = ["fluentbase-sdk/std"]
 wasm = []
 
-# [profile.release]
-# opt-level = "z"
-# lto = true
-# panic = "abort"
-# codegen-units = 1
+[profile.release]
+opt-level = "z"
+lto = true
+panic = "abort"
+codegen-units = 1
 
