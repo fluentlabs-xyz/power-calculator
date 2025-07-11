@@ -4,14 +4,14 @@ use std::path::PathBuf;
 fn main() {
     println!("cargo:warning=Build script started");
 
-    // std::env::set_var("FLUENT_DOCKER_IMAGE", "fluentbase:local");
+    std::env::set_var("FLUENT_DOCKER_IMAGE", "ghcr.io/fluentlabs-xyz/fluentbase-sdk:nightly-2025-01-27");
 
     build_with_args(
         ".",
         BuildArgs {
             contract_name: Some("PowerCalculator.wasm".to_string()),
             docker: true,
-            tag: "v0.3.4-dev".to_string(),
+            // tag: "v0.3.4-dev".to_string(),
             mount_dir: Some(PathBuf::from("./")),
             output: Some(PathBuf::from("out")),
             generate: vec![
