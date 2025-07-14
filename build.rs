@@ -4,7 +4,7 @@ use std::path::PathBuf;
 fn main() {
     println!("cargo:warning=Build script started");
 
-    std::env::set_var("FLUENT_DOCKER_IMAGE", "ghcr.io/fluentlabs-xyz/fluentbase-sdk:nightly-2025-01-27");
+    // std::env::set_var("FLUENT_DOCKER_IMAGE", "ghcr.io/fluentlabs-xyz/fluentbase-sdk:nightly-2025-01-27");
 
     build_with_args(
         ".",
