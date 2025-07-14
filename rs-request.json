@@ -1,6 +1,6 @@
 {
+  "contract_address": "0x7d1f48469542affdc2e8b206b0eee0a430486979",
   "contract_name": "PowerCalculator",
-  "address_hash": "0x7d1f48469542affdc2e8b206b0eee0a430486979",
   "git_source": {
     "repository_url": "https://github.com/fluentlabs-xyz/power-calculator.git",
     "commit_reference": "eaaebe6",
